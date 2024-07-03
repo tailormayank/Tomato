@@ -16,11 +16,11 @@ html, body {
   color: #333;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 /* Container */
 .container {
@@ -29,11 +29,6 @@ img {
   padding: 0 15px;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
 
 p {
   margin-bottom: 1rem;
@@ -128,4 +123,13 @@ th {
 .app{
   width: 80%;
   margin: auto;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
 }

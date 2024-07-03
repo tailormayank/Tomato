@@ -1,4 +1,4 @@
-/* Base CSS Boilerplate */
+/* Base CSS Boilerplate
 
 /* Reset */
 * {
@@ -10,18 +10,18 @@
 html, body {
   width: 100%;
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: outfit;
   font-size: 16px;
   line-height: 1.5;
   background-color: #f9f9f9;
   color: #333;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 /* Container */
 .container {
@@ -31,10 +31,10 @@ img {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: 600;
-}
+} */
 
 p {
   margin-bottom: 1rem;
