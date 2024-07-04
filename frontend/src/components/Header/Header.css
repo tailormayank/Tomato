@@ -44,5 +44,6 @@
 
 .header-contents button:hover{
     background-color:   #fff4f2;
+    cursor: pointer;
 }
 

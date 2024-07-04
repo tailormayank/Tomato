@@ -7,7 +7,8 @@
 
 .navbar .logo{
     width: 155px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    margin-top: 15px;
 }
 
 .navbar-menu{
@@ -41,6 +42,7 @@
 
 .navbar button:hover{
     background-color: #fff4f2;
+    cursor: pointer;
 }
 
 .navbar .active{
