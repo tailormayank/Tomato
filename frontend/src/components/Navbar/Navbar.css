@@ -23,6 +23,12 @@
     
 }
 
+.navbar-menu a{
+  text-decoration: none;  
+  text-align: center;
+  color: #49557e;
+}
+
 .navbar-right{
     display: flex;
     align-items: center;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -10,10 +11,10 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="logo"><img src={assets.logo} alt="logo" /></div>     
       <ul className='navbar-menu'>
-        <li onClick={()=>setMenu("Home")}className={menu==="Home"?"active":""}>Menu</li>
-        <li onClick={()=>setMenu("Menu")}className={menu==="Menu"?"active":""}>Home</li>
-        <li onClick={()=>setMenu("Mobile-App")}className={menu==="Mobile-App"?"active":""}>Mobile-App</li>        
-        <li onClick={()=>setMenu("Contect-us")}className={menu==="Contect-us"?"active":""}>Contect-us</li>
+        <Link to='/' onClick={()=>setMenu("Home")}className={menu==="Home"?"active":""}>Menu</Link>
+        <a href='#explore-menu' onClick={()=>setMenu("Menu")}className={menu==="Menu"?"active":""}>Home</a>
+        <a href='#app-download'onClick={()=>setMenu("Mobile-App")}className={menu==="Mobile-App"?"active":""}>Mobile-App</a>        
+        <a href='#footer'onClick={()=>setMenu("Contect-us")}className={menu==="Contect-us"?"active":""}>Contect-us</a>
       </ul>
       <div className="navbar-right">
         <img src={assets.search_icon} alt="Search-Icons" />
