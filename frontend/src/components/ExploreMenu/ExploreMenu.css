@@ -56,3 +56,10 @@
     border: 3.5px solid tomato;
     padding: 2px;
 }
+
+@media (max-width:1050px) {
+    .explore-menu{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
