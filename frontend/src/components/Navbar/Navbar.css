@@ -6,7 +6,7 @@
 }
 
 .navbar .logo{
-    width: 155px;
+    width: 160px;
     padding-bottom: 5px;
     margin-top: 15px;
 }
@@ -116,6 +116,11 @@
 }
 
 @media (max-width:750px) {
+
+    .navbar .logo{
+        width: 100px;
+    }
+
     .navbar-menu{
        display: none;
     }
