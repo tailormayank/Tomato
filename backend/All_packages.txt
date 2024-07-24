@@ -1,0 +1,11 @@
+express => client/server connectivity.
+mongooss => Help us conect to the database.
+jsonwebtoken => help us in creating the web authentication system.
+bcrypt => encrypt the user data and store in database
+cors => gives the permition to the front end to connect to the backend.
+body-parser => using this we parse the data to the user.
+multer => image stored system.
+stripe => payment gateway.
+validator => validate the email address given by the user.
+nodemon => when we save out project the server will be restarted.
+devend =>
