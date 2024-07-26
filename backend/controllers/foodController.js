@@ -10,7 +10,7 @@ const addFood = async(req, res) => {
 
     const food = new foodModel({
         name:req.body.name,
-        disription:req.body.disription,
+        discription:req.body.discription,
         price:req.body.price,
         category:req.body.category,
         image:image_filename
@@ -32,8 +32,8 @@ const listFood = async (req , res) =>{
             const foods = await foodModel.find({});
             res.json({success:true, data:foods})
         } catch (error) {   
-            console.log("Error");
-            res.json({success:false, massage:"error"})
+            console.log("error");
+            res.json({success:false, massage:"Error"})
         }
 }
 
@@ -47,7 +47,7 @@ const removeFood = async (req , res) => {
             await foodModel.findByIdAndDelete(req.body.id);
             res.json({success:true, massage:"food removed"})
         } catch (error) {
-            console.log("Error");
+            console.log("error");
             res.json({success:false, massage:"Error"})
         }
 } 
