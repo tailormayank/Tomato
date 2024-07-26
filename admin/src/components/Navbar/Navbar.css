@@ -11,4 +11,10 @@
 
 .navbar .profile{
     width: 40px;
+    cursor: pointer;
+}
+
+.navbar .profile:hover{
+    border: 2px solid tomato;
+    border-radius: 50%;
 }

@@ -17,7 +17,7 @@ const addFood = async(req, res) => {
     })
     try {
         await food.save()
-        res.json({success:true, massage:"Food Add"})
+        res.json({success:true, massage:"Food Added"})
     } catch (error) {
         console.log("Error");
         res.json({success:false, massage:"Error"})
@@ -45,7 +45,7 @@ const removeFood = async (req , res) => {
             fs.unlink(`uploads/${food.image}` , ()=>{});
 
             await foodModel.findByIdAndDelete(req.body.id);
-            res.json({success:true, massage:"food removed"})
+            res.json({success:true, massage:"Food Removed"})
         } catch (error) {
             console.log("error");
             res.json({success:false, massage:"Error"})
