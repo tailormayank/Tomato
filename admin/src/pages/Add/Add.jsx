@@ -47,7 +47,6 @@ const Add = ({url}) => {
         }
     }
 
-
   return (
     <div className='add' >
       <form className='flex-col' onSubmit={onSubmitHandler} >
@@ -66,8 +65,8 @@ const Add = ({url}) => {
             <p>Product Discription</p>
             <textarea onChange={onChangeHandler} value={data.discription} name="discription" rows="6" placeholder='Enter your content here'></textarea>
         </div>
-        <div className="add-catagory-price">
-            <div className="add-catagory flex-col">
+        <div className="add-category-price">
+            <div className="add-category flex-col">
                 <p>Product Category</p>
                 <select onChange={onChangeHandler} name="category">
                     <option value="Salad">Salad</option>

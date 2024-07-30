@@ -6,13 +6,13 @@ import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
 import AppDownload from '../../components/AppDownload/AppDownload'
 const Home = () => {
 
-    const [catagory , setCatagory] = useState("All");
+    const [category , setCategory] = useState("All");
 
   return (
     <div>
       <Header/>
-      <ExploreMenu catagory={catagory} setCatagory={setCatagory} />
-      <FoodDisplay catagory={catagory} />
+      <ExploreMenu category={category} setCategory={setCategory} />
+      <FoodDisplay category={category} />
       <AppDownload />
     </div>
   )
