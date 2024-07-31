@@ -9,3 +9,6 @@ stripe => payment gateway.
 validator => validate the email address given by the user.
 nodemon => when we save out project the server will be restarted.
 devend =>
+
+the perfect way to verify the payment it to use "web hooks"
+
