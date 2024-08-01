@@ -78,7 +78,47 @@ const verifyOrder = async(req, res) => {
 
 //user order for frontend
 const userOrders = async(req, res) => {
-
+        try {
+            const orders = await orderModel.find({userId:req.body.userId});
+            res.json({success:true, data:orders});
+        } catch (error) {
+            console.log(error);
+            res.json({success:false, massage:"Error"});
+        }
 };
 
-export {placeOrder, verifyOrder, userOrders};
+// Listing orders for admin pannal
+const listOrders = async(req, res) =>{
+    try {
+        const orders = await orderModel.find({});
+        res.json({success:true, data:orders});
+    } catch (error) {
+        console.log(error);
+        res.json({success:false, massage:"Error"})
+    }
+};
+
+const deleteOrders = async(req, res) => {
+    //     const {orderId , success} = req.body;
+    // try {
+    //     await orderModel.findByIdAndDelete(orderId);
+    //     res.json({success:true, massage:"Oreder Canceled"});
+
+    // } catch (error) {
+    //     console.log(error);
+    //     res.json({success:false, massage:"Error"});
+    // }
+};
+
+//api for updating order starus
+const updateStatus = async(req, res) => {
+    try {
+        await orderModel.findByIdAndUpdate(req.body.orderId, {status:req.body.status});
+        res.json({success:true, massage:"Status Updated"})
+    } catch (error) {
+        console.log(error);
+        res.json({success:false, massage:"Error"})
+    }
+}  
+
+export {placeOrder, verifyOrder, userOrders, listOrders, deleteOrders, updateStatus};
