@@ -1,5 +1,5 @@
 import { response } from 'express';
-import foodModel from '../models/FoodModel.js';
+import foodModel from '../models/foodModel.js';
 import fs from 'fs';
 
 // add food items
