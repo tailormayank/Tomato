@@ -7,7 +7,7 @@ import Stripe from "stripe"
 //placing user order form frontend 
 const placeOrder = async (req, res) => {
 
-    const frontend_url = "http://localhost:5173";
+    const frontend_url = "https://tomato-frontend-r1pc.onrender.com/";
 
     try {
         const newOrder = new orderModel({
